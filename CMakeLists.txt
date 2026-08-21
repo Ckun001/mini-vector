@@ -9,3 +9,4 @@ include_directories(src)
 add_executable(mini-vector 
     src/main.cpp
 )
+target_compile_options(mini-vector PRIVATE "$<$<CXX_COMPILER_ID:GNU>:-finput-charset=UTF-8>")
